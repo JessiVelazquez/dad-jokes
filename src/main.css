@@ -1,0 +1,55 @@
+/* These are global CSS styles */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.main-content {
+  overflow-y: auto;
+}
+
+.footer-container {
+  flex-shrink: 0; /* Prevents the footer from shrinking */
+}
+
+.header-container .logo, 
+.header-container .logo:visited, 
+.header-container .logo:hover, 
+.header-container .logo:active {
+  text-decoration: none;
+  background: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;  /* background image should remain fixed while the content scrolls */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  background-image: url('~@/assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  opacity: 0.15;
+}
