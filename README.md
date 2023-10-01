@@ -47,7 +47,6 @@ This is a website designed to be a one stop shop for all your Dad jokes! The sit
 7. Navigate to [http://localhost:8080/](http://localhost:8080/) in a web browser to see the site!
 
 
-
 ---------------------------------------------------------------------------------------
 
 
